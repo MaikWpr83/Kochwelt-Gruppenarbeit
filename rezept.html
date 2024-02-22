@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./css/rezepte.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/foot.css" />
+    <script src="./js/bulgogi.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+  </head>
+  <body onload="includeHTML(); loadItems()">
+    <header w3-include-html="./templates/header.html"></header>
+    <section>
+      <h1>Bulgogi: koreanisches Feuerfleisch</h1>
+      <img id="mainpic" src="./img/bulgogi.jpg" alt="Bulgogibild" />
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>30&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/brain-solid.svg" alt="Gehirnicon" />
+          <span>einfach</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/calendar-alt-regular.svg" alt="Kalendericon" />
+          <span>21.01.2024</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <main>
+      <div id="portionencontainer">
+        <form onsubmit="event.preventDefault()">
+          <label for="portionen">Zutaten für</label>
+          <input
+            id="portionen"
+            min="1"
+            max="20"
+            type="number"
+            step="1"
+            value="4"
+            required
+          />
+          <button type="submit" onclick="calcItems()" class="kbutton">
+            Portionen
+          </button>
+        </form>
+      </div>
+      <table>
+        <tbody id="itemtable"></tbody>
+      </table>
+    </main>
+    <section>
+      <h2>Zubereitung</h2>
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>ca.&nbsp30&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>Gesamtzeit&nbspca.&nbsp90&nbspMin.</span>
+        </div>
+      </div>
+      <p>
+        Rinderfilet in feine dünne Scheiben schneiden, in eine
+        Schüssel geben. Zwiebel in Streifen schneiden. Frühlingszwiebeln leicht
+        schräg in Ringe schneiden. Alles beiseitestellen. 
+        Inzwischen Marinade zubereiten. Nashibirne schälen und in einen
+        Küchenmixer geben. Zwiebel, Ingwer und Knoblauchzehen schälen und
+        dazugeben, alles fein pürieren. Sojasauce, Zucker, Sesamöl und schwarzen
+        Pfeffer darunter rühren. An dieser Stelle können Sie optional die
+        Sesamsaat mit in die Marinade hineingeben. Marinade über das Fleisch
+        geben, vorbereitetes Gemüse dazugeben, alles gut miteinander vermengen
+        und 1 Stunde kalt stellen. Reis nach Packungsanweisung zubereiten und
+        warmhalten. Mariniertes Fleisch aus der Marinade nehmen, in einer heißen
+        Grillpfanne bei starker Hitze von jeder Seite anbraten, bis sich die
+        Ränder des Fleischs bräunen und beginnen zu karamellisieren. Je nach
+        Dicke des Fleisches kann das von jeder Seite ca. 3–4 Minuten dauern.
+        Reis auf Teller geben, Bulgogi darauf anrichten, mit etwas Sesam
+        bestreuen und servieren.
+      </p>
+      <h3>Rezept&nbsperstellt&nbspvon</h3>
+      <div id="mycontainer">
+        <img src="./img/mypic.jpg" alt="Jörgs Bild" />
+        <span>Jörg</span>
+      </div>
+    </section>
+    <footer w3-include-html="./templates/footer.html"></footer>
+  </body>
+</html>

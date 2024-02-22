@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('./font/Raleway-Regular.ttf');
+    font-family: "Raleway-Bold";
+    src: url(./font/Raleway-Bold.ttf);
+}
+body {
+    margin: 0 auto;
+    font-family: "Raleway-Regular", sans-serif;
+}
+.headline h1 {
+    font-size: 48px;
+    font-family: "Raleway-Bold", sans-serif;
+}
+.chicken-teriyaki {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.chicken-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.headline {
+    margin-top: 80px;
+}
+.box-time-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+}
+.box {
+    height: 28px;
+    padding: 12px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.box img {
+    height: 20px;
+}
+.box-time-date span {
+    font-size: 18px;
+}
+.split {
+    height: 2px;
+    background-color: rgb(239,239,239);
+    margin-top: 84px;
+}
+.ingredients {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+#input-ingredients {
+    font-size: 24px;
+    width: 200px;
+    height: 60px;
+    margin-left: 16px;
+    border-width: 1px;
+    border-color: rgb(239,239,239);
+    border-style: double;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+button {
+    width: 200px;
+    height: 64px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #008001;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+button:hover {
+    background-color:rgb(0, 200, 0);
+}
+label {
+    font-size: 24px;
+    padding-top: 16px;
+}
+.ingredients {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+table {
+    width:100%;
+    font-family: "Raleway-Regular";
+}
+table tr:nth-child(odd) {
+    background-color: rgb(239, 239, 239);
+}
+td {
+    border-radius: 12px;
+    padding:16px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+form {
+    display: flex;
+    align-items: stretch;
+}
+var {
+    font-family: "Raleway-Regular";
+    font-style: normal;
+}
+.preparation {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.preparation-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+}
+.p-time {
+    height: 28px;
+    padding: 12px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.p-time span {
+    font-size: 18px;
+}
+.p-time img {
+    height: 20px;
+}
+p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 32px;
+}
+.created-by {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.created-by img{
+    height: 150px;
+    border-radius: 50%;
+}
+.created-by span{
+    font-size: 32px;
+}
+
+@media (min-width: 1900px) {
+    body {        
+        width: 1900px;       
+    }
+}
+
+@media(max-width:800px) {
+    .chicken-teriyaki {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .box-time-date {
+        justify-content: center;
+    }
+    .ingredients {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    form {
+        justify-content: center;
+    }
+    .preparation {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .preparation-time {
+        justify-content: center;
+    }
+}
+@media(max-width:600px) {
+    .box-time-date {
+        flex-direction: column;
+    }
+    .ingredients {
+        display: flex;
+        flex-direction: column;
+    }
+    .preparation-time {
+        flex-direction: column;
+    }
+    form {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    button {
+        margin-bottom: 40px;
+    }
+    table {
+        text-align: center;
+    }
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .created-by {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

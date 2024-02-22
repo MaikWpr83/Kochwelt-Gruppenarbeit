@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('./font/Raleway-Regular.ttf');
+    font-family: "Raleway-Bold";
+    src: url(./font/Raleway-Bold.ttf);
+}
+body {
+    margin: 0 auto;
+    font-family: "Raleway-Regular", sans-serif;
+    height:100%;    
+}
+
+#maincontainer {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;    
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-bottom: 100px;
+}
+
+/*E-Mail senden*/
+.mail_gesendet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;    
+    background-color: #EFEFEF;           
+    border-color: #383636;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.mail_gesendet h1{
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+@media (min-width: 1900px) {
+    body {        
+        width: 1900px;       
+    }
+}
+@media (max-width:450px) {
+    .mail_gesendet {        
+        width: 70%;
+    }
+}

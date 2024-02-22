@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon einbinden in Tab-->
+    <link rel="icon" type="image/vnd.icon" href="./img/favicon.png" alt="Kochwelt favicon">
+
+    <!--Mail gesendet - CSS einbinden-->
+    <link rel="stylesheet" href="templates/mail_gesendet.css">
+
+    <!--header - CSS einbinden-->
+    <link rel="stylesheet" href="templates/header.css"> 
+
+    <!--footer - CSS einbinden-->
+    <link rel="stylesheet" href="templates/footer.css"> 
+    
+    <!--JavaScript, Header - Body - Footer-->
+    <script src="templates_header_body_footer_script.js"></script>  
+
+    <title>E-Mail gesendet</title>
+
+</head>
+
+<body onload="includeHTML()">
+   
+    <!--header include-->
+    <div w3-include-html="templates/header.html"></div>        
+
+    <!--mail gesendet include-->
+    <div w3-include-html="templates/mail_gesendet.html"></div>  
+
+    <!--footer include-->
+    <div w3-include-html="templates/footer.html"></div>  
+
+</body>
+
+</html>

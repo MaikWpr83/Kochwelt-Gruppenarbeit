@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/mstyle.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/foot.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+</head>
+<body onload="includeHTML()">   
+<header w3-include-html="./templates/header.html"></header>
+<!--Kontakt-->
+<div class="kontakt">                                   
+
+    <!--Kontaktformular-->
+    <div class="kontaktformular">                       
+
+        <!--Formular / Mail senden-->
+        <form onsubmit="sendMail(event)">               
+
+            <!--Anrede-->
+            <label class="anrede">Anrede  *</label>     
+                
+            <div class="geschlecht">
+                <select name="geschl">
+                    <option value="0">Bitte wählen</option>
+                    <option value="männlich">Herr</option>
+                    <option value="weiblich">Frau</option>
+                </select>
+            </div>
+
+            <!--Vorname-->
+            <label class="vorname">Vorname  *</label>       
+
+            <div class="vorname_input">
+                <input type="text" name="Vorname" required>
+            </div>
+
+            <!--Name-->
+            <label class="name">Name  *</label>                     
+
+            <div class="name_input">
+                <input type="text" name="Name" required>
+            </div>
+
+            <!--E-Mail-->
+            <label class="email">E-Mail-Adresse  *</label>          
+
+            <div class="email_input">
+                <input type="email" name="E-Mail" required>
+            </div>
+
+            <!--Betreff-->
+            <label class="betreff">Ihre Nachricht *</label>         
+            <div class="betreff_textarea">
+                <textarea rows="10" name="Nachricht" required></textarea>
+            </div>
+
+            <!--Nachricht-->
+            <div class="nachricht">                                 
+                <label>
+                    <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
+                    Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin.  *
+                </label>
+            </div>
+
+            <!--Button-->
+            <button class="button" type="submit">Senden</button>    
+
+        </form>
+
+    </div>
+
+    <!--Anschrift / Anfahrt - Container-->
+    <div class="anschrift_anfahrt">                                 
+
+        <div class="foto_anschrift">
+
+            <!--Anschrift-->
+            <div class="anschrift">                                 
+                <p>Maik Wypior</p>
+                <p>Reilstraße 46</p>
+                <p>06114 Halle</p>
+                <p>01520/3201121</p>
+                <p>maikwypior@googlemail.com</p>
+            </div>
+
+            <!--Foto-->
+            <div class="foto">                                      
+                <img class="foto_img" src="./img/foto_kontakt.jpg">
+            </div>
+
+        </div>
+        <!--Maps-->                                                      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5724746707206!2d11.963899876878765!3d51.50271251104546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a67b5254f83abd%3A0xb84497198269f516!2sReilstra%C3%9Fe%2046%2C%2006114%20Halle%20(Saale)!5e0!3m2!1sde!2sde!4v1700554265841!5m2!1sde!2sde" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="quick" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </div>
+
+</div>
+<footer w3-include-html="./templates/footer.html"></footer>
+</body>
+</html>

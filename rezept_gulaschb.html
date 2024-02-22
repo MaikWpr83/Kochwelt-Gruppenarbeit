@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept_Gulasch</title>
+    <link rel="stylesheet" href="./css/rezept_gulaschb.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/foot.css" />
+    <script src="./js/gulasch.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+  </head>
+  <body onload="includeHTML(); loadItems()">
+    <header w3-include-html="./templates/header.html"></header>
+    <section>
+      <h1>Gulasch mit Knödel</h1>
+      <img id="mainpic" src="./img/gulasch.jpg" alt="Bulgogibild" />
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>60&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/brain-solid.svg" alt="Gehirnicon" />
+          <span>mittel</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/calendar-alt-regular.svg" alt="Kalendericon" />
+          <span>08.01.2024</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <main>
+      <div id="portionencontainer">
+        <form onsubmit="event.preventDefault()">
+          <label for="portionen">Zutaten für</label>
+          <input
+            id="portionen"
+            min="1"
+            max="20"
+            type="number"
+            step="1"
+            value="1"  
+            required          
+          />
+          <button type="submit" onclick="calcItems()" class="kbutton">
+            Portionen
+          </button>
+        </form>
+      </div>
+      <table>
+        <tbody id="itemtable"></tbody>
+      </table>
+    </main>
+    <section>
+      <h2>Zubereitung</h2>
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>ca.&nbsp60&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>Gesamtzeit&nbspca.&nbsp4&nbsph.</span>
+        </div>
+      </div>
+      <p>
+        Die Hefe zerbröckeln und mit der lauwarmen Milch verrühren. Abdeckt etwa 15 Minuten stehen lassen, bis die Hefe Blasen wirft. 
+      Dann mit Mehl, Eiern und etwas Salz zu einem festen, glatten Teig verkneten, evtl. noch etwas Mehl zugeben. 
+      Anschließend abgedeckt etwa 1 Stunde gehen lassen, bis sich das Volumen verdoppelt hat.
+      <br><br>
+      Die Zwiebeln und die Schalotten abziehen. Die Zwiebeln in Ringe schneiden und die Schalotten ganz lassen. 
+      Die Kartoffel schälen, abspülen und würfeln. Das Rindfleisch abspülen, trocken tupfen, 
+      grob würfeln und mit etwas Salz und einigen Umdrehungen schwarzem Pfeffer aus der Mühle würzen.
+      <br><br>
+      In einem Schmortopf das Butterschmalz erhitzen und die Rindfleischwürfel darin kräftig anbraten. 
+      Anschließend herausnehmen und die Zwiebelringe sowie die Schalotten im Bratfett andünsten. Die Kartoffelwürfel zugeben und kurz mitbraten. 
+      Dann das Fleisch wieder dazugeben, das Tomatenmark kurz mit anrösten und mit Kümmel und Paprika würzen. 
+      Die Rinderbrühe angießen, aufkochen lassen und alles zugedeckt etwa 1 Stunde schmoren. Dabei gelegentlich umrühren.
+      <br><br>
+      Aus dem Knödelteig 2 Rollen formen, diese jeweils in ein Geschirrtuch einrollen und die Enden zubinden. In kochendem, 
+      leicht gesalzenem Wasser in etwa 15 Minuten gar ziehen lassen.
+      <br><br>
+      Anschließend herausnehmen und sofort mit einem Bindfaden in etwa 2 bis 3 cm dicke Scheiben teilen. 
+      Das Gulasch abschmecken und zusammen mit den Knödelscheiben auf Tellern anrichten. Mit Sauerrahm und etwas Paprikapulver garnieren.
+      </p>
+      <h3>Rezept&nbsperstellt&nbspvon</h3>
+      <div id="mycontainer">
+        <img src="./img/foto_kontakt.jpg" alt="Jörgs Bild" />
+        <span>Maik</span>
+      </div>
+    </section>
+    <footer w3-include-html="./templates/footer.html"></footer>
+  </body>
+</html>

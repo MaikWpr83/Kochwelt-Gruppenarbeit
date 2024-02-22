@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('./font/Raleway-Regular.ttf');
+    font-family: "Raleway-Bold";
+    src: url(./font/Raleway-Bold.ttf);
+}
+body {
+    margin: 0 auto;
+    font-family: "Raleway-Regular", sans-serif;
+    height:100%;
+}
+
+/*Datenschutzerklärung Content*/
+.datenschutzerklärung_content{
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*Datenschutzerklärung*/
+.datenschutzerklärung h1{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.datenschutzerklärung p{
+    margin: 0;
+    line-height: 2;
+}
+
+/*Betroffenenrecht*/
+.betroffenenrechte h2{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.betroffenenrechte p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.betroffenenrechte ul{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*allgemeine Information*/
+.allgemeine_information h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.allgemeine_information h3{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.allgemeine_information p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.allgemeine_information ul{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*Cookies*/
+.cookies h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cookies h3{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.cookies p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.cookies ul{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*Kontakt*/
+.kontakt h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.kontakt h3{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.kontakt p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*Webfonts*/
+.webfonts h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.webfonts p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*Google Maps*/
+.google_maps h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.google_maps h3{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.google_maps p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*Widerspruchsrecht*/
+.widerspruchsrecht h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.widerspruchsrecht h3{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.widerspruchsrecht p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*datenschutzbestimmung*/
+.datenschutzbestimmung h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.datenschutzbestimmung p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/*datenschutzbeauftragten*/
+.datenschutzbeauftragten h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.datenschutzbeauftragten p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1900px) {
+    body {        
+        width: 1900px;       
+    }
+}
+/*Impressum Responsiv*/
+@media(max-width: 600px) {
+    .betroffenenrechte a{
+        word-wrap: break-word;
+    }
+}
+
+@media(max-width: 530px) {
+    .datenschutzerklärung_content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .betroffenenrechte a{
+        word-wrap: break-word;
+    }
+}
+
+@media(max-width: 530px) {
+    .cookies ul {
+        word-wrap: break-word
+    }
+}
+
+@media(max-width: 360px) {
+    .webfonts a{
+        word-wrap: break-word
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+}
+
+
+

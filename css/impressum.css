@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('./font/Raleway-Regular.ttf');
+    font-family: "Raleway-Bold";
+    src: url(./font/Raleway-Bold.ttf);
+}
+body {
+    margin: 0 auto;
+    font-family: "Raleway-Regular", sans-serif;
+    height:100%;
+}
+
+#maincontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/*Impressum*/
+.impressum{
+    padding-left: 160px;
+    padding-right: 160px;  
+    flex-grow: 1;  
+}
+
+.impressum h1{
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.anschrift {
+    display: flex;
+    gap:24px;
+}
+.anschrift h2{
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.anschrift p{
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.kontakt h2{
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.kontakt p{
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 1900px) {
+    body {        
+        width: 1900px;       
+    }
+}
+
+/*Impressum Responsiv*/
+@media(max-width: 670px) {
+    .impressum {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .impressum h1 {
+        font-size: 35px;
+    }
+
+    .anschrift h2 {
+        font-size: 20px;
+    }
+
+    .kontakt h2 {
+        font-size: 20px;
+    }
+
+    .kontakt p{
+        font-size: 12px;
+    }
+
+    .anschrift {
+        flex-direction: column;
+    }
+}

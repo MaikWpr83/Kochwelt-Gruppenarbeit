@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./css/rezepte.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/foot.css" />
+    <script src="./js/steak.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+  </head>
+  <body onload="includeHTML(); loadItems()">
+    <header w3-include-html="./templates/header.html"></header>
+    <section>
+      <h1>Feinstes Rinderfiletsteak</h1>
+      <img id="mainpic" src="./img/steak.jpg" alt="Bulgogibild" />
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>17&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/brain-solid.svg" alt="Gehirnicon" />
+          <span>einfach</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/calendar-alt-regular.svg" alt="Kalendericon" />
+          <span>26.01.2024</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <main>
+      <div id="portionencontainer">
+        <form onsubmit="event.preventDefault()">
+          <label for="portionen">Zutaten für</label>
+          <input
+            id="portionen"
+            min="1"
+            max="20"
+            type="number"
+            step="1"
+            value="4"
+            required
+          />
+          <button type="submit" onclick="calcItems()" class="kbutton">
+            Portionen
+          </button>
+        </form>
+      </div>
+      <table>
+        <tbody id="itemtable"></tbody>
+      </table>
+    </main>
+    <section>
+      <h2>Zubereitung</h2>
+      <div class="miniboxcontainer">
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>ca.&nbsp10&nbspMin.</span>
+        </div>
+        <div class="minibox">
+          <img src="./img/clock-regular.svg" alt="Uhricon" />
+          <span>Gesamtzeit&nbspca.&nbsp17&nbspMin.</span>
+        </div>
+      </div>
+      <p>
+        Die Rinderfiletsteak ca. 1 Stunde vor der Zubereitung aus dem
+        Kühlschrank holen und bei Zimmertemperatur lagern. Dann das Fleisch mit
+        kaltem Wasser abwaschen, mit einem Küchenpapier trockentupfen und
+        eventuell vorhandene Häutchen und Sehnen mit einem scharfen Messer
+        entfernen. Danach die Fleischstücke mit einem Küchengarn in Form binden,
+        so garen sie gleichmäßiger und behalten ihre Form. Nun das Butterschmalz
+        in der Pfanne erhitzen und die Steaks von jeder Seite 1 Minute stark
+        anbraten. Beim Hineinlegen der Steaks in die Pfanne sollte es laut
+        Zischen, dann ist die Temperatur optimal und es bilden sich die
+        Röstaromen. Anschließend das Fleisch bei reduzierter Hitze pro Seite 2
+        Minuten lang braten. Zum Schluss die gebratenen Filetsteaks auf Alufolie
+        legen, mit Salz und Pfeffer würzen, die Alufolie zusammenschlagen, im
+        Backofen bei rund 90 Grad für ca. 8-10 Minute ruhen lassen und danach
+        das Filetssteak mit selbstgemachter Kräuterbutter servieren.
+      </p>
+      <h3>Rezept&nbsperstellt&nbspvon</h3>
+      <div id="mycontainer">
+        <img src="./img/mypic.jpg" alt="Jörgs Bild" />
+        <span>Jörg</span>
+      </div>
+    </section>
+    <footer w3-include-html="./templates/footer.html"></footer>
+  </body>
+</html>

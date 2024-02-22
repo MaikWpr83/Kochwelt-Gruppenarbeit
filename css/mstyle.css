@@ -1,0 +1,246 @@
+/*body*/
+@font-face {
+    font-family: 'Raleway';
+    src: url(./font/Raleway-Regular.ttf);
+    font-family: "bolt";
+    src: url(./font/Raleway-Bold.ttf);
+}
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*Kontakt-Container*/
+.kontakt{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Kontaktformuler*/
+.kontaktformular{
+    width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EFEFEF;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    border-color: #383636;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 10px gray;
+}
+
+/*formular*/
+form{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Anrede*/
+.anrede{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.geschlecht{
+    padding-bottom: 30px;
+}
+
+/*Vorname*/
+.vorname{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.vorname_input{
+    padding-bottom: 30px;
+}
+
+.vorname_input input{
+    width: 170px;
+}
+
+/*Name*/
+.name{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.name_input{
+    padding-bottom: 30px;
+}
+
+.name_input input{
+    width: 170px;
+}
+
+/*E-Mail*/
+.email{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.email_input{
+    padding-bottom: 30px;
+}
+
+.email_input input{
+    width: 170px;
+}
+
+/*Betreff*/
+.betreff{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.betreff_textarea textarea{
+    width: 100%;
+}
+
+/*Nachricht*/
+.nachricht{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/*Button*/
+.button{
+    margin-top: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #008001;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(0, 200, 0);
+}
+
+/*Foto*/
+.foto_anschrift{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Maps*/
+
+
+.anschrift_anfahrt iframe{
+    padding-top: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+/*Anschrift*/
+.anschrift{
+    line-height: 1.3;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.anschrift p{
+    margin: 0;
+}
+
+/*Foto*/
+.foto img{
+    width: 150px;
+}
+
+@media (min-width: 1900px) {
+    body {        
+        width: 1900px;       
+    }
+}
+
+/*Responsiv Kontakt*/
+@media(max-width: 1100px) {
+    /*Kontaktformuler*/
+    .kontaktformular{
+        width: 450px;
+    }
+
+    .anschrift_anfahrt {
+        padding-top: 100px;
+    }
+
+    .anschrift{
+        padding-bottom: 50px;
+    }
+
+    /*Foto*/
+    .foto img{
+        width: 100px;
+    }
+
+    /*Foto*/
+    .foto_anschrift{
+        display: block;
+    }
+
+    /*Maps*/
+    .anschrift_anfahrt iframe{
+        padding-top: 80px;
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 860px) {
+    .kontakt {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    .kontaktformular {
+        margin-bottom: 0px;
+    }
+
+    .anschrift_anfahrt {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .anschrift_anfahrt iframe {
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+     /*Kontaktformuler*/
+     .kontaktformular{
+        width: 300px;
+    }
+
+    .nachricht{
+        font-size: 12px;
+    }
+
+    .button{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 320px) {
+    /*Kontaktformuler*/
+    .kontaktformular{
+       width: 250px;
+   }
+
+   .anschrift_anfahrt iframe {
+        width: 200px;
+   }
+}

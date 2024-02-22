@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/chicken.js"></script>
+    
+    <title>Chicken-Teriyaki</title>
+    <link rel="icon" type="image/png" href="img/logo_small.png">
+    <link rel="stylesheet" href="./css/rezept_chicken.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/foot.css">
+
+
+</head>
+<body onload="includeHTML();loadItems()">
+    <header w3-include-html="./templates/header.html"></header>
+    <div class="chicken-teriyaki">
+        <div class="headline">
+            <h1>Chicken Teriyaki</h1>
+            <img class="chicken-img" src="./img/chicken-teriyaki.jpg">
+        </div>
+
+        <div class="box-time-date">
+            <div class="box">
+                <img src="./img/clock-regular.svg">
+                    <span>15 Min</span>    
+            </div>
+            <div class="box">
+                <img src="./img/brain-solid.svg">
+                    <span>einfach</span> 
+            </div>
+            <div class="box">   
+                <img src="./img/calendar-alt-regular.svg">
+                    <span>20.01.2024</span>
+            </div>
+            </div>
+            <div class="split">
+            </div>
+    </div>
+
+    <div class="ingredients">
+        <form onsubmit="event.preventDefault()">
+            <label for="input-ingredients">Zutaten für</label>
+            <input id="input-ingredients" min="1" value="1" type="number" step="1" required>
+            <button type="submit" onclick="addIngredient()">Portionen</button>
+        </form>
+
+        <table id="table">
+            <tbody id="table-ingredients"></tbody>
+        </table>
+    </div>
+    <div class="preparation">
+        <h1>Zubereitung</h1>
+        <div class="preparation-time">
+            <div class="p-time">
+                <img src="img/clock-regular.svg">
+                <span>ca.&nbsp20&nbspMin</span>
+            </div>
+            <div class="p-time">
+                <img src="img/clock-regular.svg">
+                <span>Gesamtzeit&nbspca.&nbsp30&nbspMin</span>
+            </div>
+        </div>
+        <p> Hähnchen in kleine Stücke schneiden, die Frühlingszwiebeln in Ringe schneiden und den Knoblauch klein hacken.
+            In einer Schüssel Sojasauce, Zucker, Essig, Mirin und Sesamöl miteinander verrühren. 
+            Die Speisestärke in etwas Wasser auflösen und unterrühren. 
+            Öl in einer Pfanne erhitzen und das Hähnchen kräftig anbraten. Dann den Knoblauch zugeben und kurz mitbraten. 
+            Die Sauce zugeben und alles unter Rühren bei mittlerer Hitze für ca. 2 Minuten eindicken lassen, bis die Sauce glänzt.
+            Das Hähnchen mit Frühlingszwiebeln servieren.
+        </p>
+        <h2>Rezept erstellt von</h2>
+        <div class="created-by">
+            <img src="img/pic.jpeg">
+            <span>Prathab</span>
+        </div>
+    </div>
+    
+    
+    <footer w3-include-html="./templates/footer.html"></footer>
+
+    
+        
+      
+</body>
+</html>

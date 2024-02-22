@@ -1,0 +1,109 @@
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right:160px;    
+    height:120px;
+    box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.1);    
+    margin-bottom:102px;
+}
+#kochweltshort {
+    display:none;
+}
+nav {
+    display: flex;
+    align-self: flex-end;
+    gap: 24px;    
+    padding-bottom: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(64,59,59);
+    font-size: 20px;
+    font-weight: 600;
+}
+#burgericon {
+    height:80px;
+    display:none;
+}
+#burgermenu {
+    position:absolute;
+    top:120px;
+    left:calc(100vw - 320px);
+    width:303px; 
+    height:0;  
+        
+    border-radius:24px;
+    background-color:white;
+    box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.1);
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+}
+
+#burgermenu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(64,59,59);
+    font-size: 20px;
+    font-weight: 600;
+    padding-left:80px;
+    padding-top:12px;
+    padding-bottom:12px;
+    
+    
+}
+#burgermenu a:hover {
+    color: rgb(0,128,0); 
+}
+
+.burgerdivider {
+    height:1px;
+    background-color: rgb(0,128,0); 
+    position:absolute;
+    left:32px;
+    right:32px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 16px;
+    color: rgb(0,128,0); 
+}
+
+@media (max-width:1204px) {
+    nav a {
+        display:none;
+    }
+    #burgericon {
+        display:flex !important;        
+    }    
+}
+@media (min-width:1205px) {
+    #burgermenu {
+        display:none;
+    }
+}
+
+@media (max-width:817px) {
+    
+    #kochweltlong {
+        display:none; 
+    }
+    #kochweltshort {
+        display:inline;
+        height:80px;
+    }
+      
+}
+
+@media (max-width:650px) {
+    header {
+        padding:0;
+        justify-content: space-evenly;
+        margin-bottom: 54px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail gesendet!</title>
+    <link rel="stylesheet" href="./css/mail_gesendet.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/foot.css" />
+    <script src="./js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+  </head>
+  <body onload="includeHTML()">
+    <div id="maincontainer">
+      <header w3-include-html="./templates/header.html"></header>
+      <main>
+        <div class="mail_gesendet">
+          <h1>Ihre E-Mail wurde erfolgreich versendet!</h1>
+        </div>
+      </main>
+      <footer w3-include-html="./templates/footer.html"></footer>
+    </div>
+  </body>
+</html>
